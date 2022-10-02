@@ -2,11 +2,22 @@ import './App.css';
 import Testimony from './components/Testimony';
 
 function App() {
-  return (
-    <div className="App">
-      <Testimony />
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className='container'>
+                <h1>Here is what our alumni say about freeCodeCamp:</h1>
+                <Testimony
+                    name='Emma Bostian'
+                    country='Sweden'
+                    position='Software Engineer'
+                    company='Spotify'
+                    testimony='I ve always struggled with learning JavaScript. I ve taken many courses but freeCodeCamps
+                course was the one which stuck. Studying JavaScript as well as data structures and algorithms on
+                freeCodeCamp gave me the skills and confidence I needed to land my dream job as a software engineer at
+                Spotify.'/>
+            </div>
+        </div>
+    );
 }
 
 export default App;
